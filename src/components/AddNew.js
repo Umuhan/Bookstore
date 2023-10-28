@@ -1,8 +1,9 @@
-import React from 'react';
+import React from "react";
 
 const AddNew = () => (
   <div>
     <h2 className="header">Books</h2>
+
     <form className="form">
       <input
         type="text"
@@ -23,9 +24,8 @@ const AddNew = () => (
         placeholder="Category"
       />
       <button type="submit" className="btn-add">
-        {' '}
-        Add book
-        {' '}
+        {" "}
+        Add book{" "}
       </button>
     </form>
   </div>
