@@ -25,25 +25,25 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 [Bookstore] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
-
-**[your_project__name]** is a...
+An online bookstore that uses React and Router likely refers to a web application or website for buying and browsing books online. React is a popular JavaScript library for building user interfaces, and "Router" likely refers to a routing library like React Router, used for managing navigation within the application. This combination allows for dynamic and interactive user experiences when searching for and purchasing books on the website.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
+HTML5
+CSS3
+React
+
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **Navigation bar**
+- **Make list of books**
+- **Add and remove books**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -51,9 +51,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
-
-- [Live Demo Link]()
+- [COMING SOON!]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -61,83 +59,54 @@
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
-
 To get a local copy up and running, follow these steps.
+
+**Clone this repo as described in the setup section.**
+
+**Make modifications as peferred**
 
 ### Prerequisites
 
 In order to run this project you need:
 
-<!--
 Example command:
 
-```sh
- gem install rails
-```
- -->
+install desktop, laptop or mac with internet connection
+
+A text editor (i.e. Visual Studio)
+
+GitHub account
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-<!--
 Example commands:
 
-```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
-```
---->
-
-### Install
-
-Install this project with:
-
-<!--
-Example command:
-
-```sh
-  cd my-project
-  gem install
-```
---->
+cd my-folder
+git clone git@github.com:Umuhan/Bookstore.git
 
 ### Usage
 
 To run the project, execute the following command:
 
-<!--
 Example command:
 
-```sh
-  rails server
-```
---->
+npm start
 
 ### Run tests
 
 To run tests, run the following command:
 
-<!--
 Example command:
 
-```sh
-  bin/rails test test/models/article_test.rb
-```
---->
+npm jest
 
 ### Deployment
 
 You can deploy this project using:
 
-<!--
-Example:
-
-```sh
-
-```
- -->
+COMING SOON!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -145,19 +114,11 @@ Example:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
+👤 Umuhan Mohamud
 
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [ @Umuhan](https://github.com/Umuhan)
+- Twitter: [@twitterhandle](https://twitter.com/HannyUmuhan)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/umuhan-mohamud/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -165,11 +126,9 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
-
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- **[Using Redux]**
+- **[Well Designed Grafic User Interface]**
+- **[More methods]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -179,7 +138,7 @@ Example:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/Umuhan/Bookstore/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -187,9 +146,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
-If you like this project...
+If you like this project give me a thumbs up.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -197,9 +154,8 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
-
-I would like to thank...
+I would like to thank microverse and
+Mahamed Hassan Noor
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
