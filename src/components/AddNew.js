@@ -22,7 +22,7 @@ const AddNew = () => (
         name="bookcategory"
         placeholder="Category"
       />
-      <button type="submit" className="btn">
+      <button type="submit" className="btn-add">
         {' '}
         Add book
         {' '}

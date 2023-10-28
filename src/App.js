@@ -12,7 +12,6 @@ const App = () => (
       <Routes>
         <Route path="/" element={<AddNew />} />
         <Route path="/categories" element={<Categories />} />
-
         <Route path="*" element={<h1>Error...</h1>} />
       </Routes>
     </div>
