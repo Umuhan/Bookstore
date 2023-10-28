@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const AddNew = () => (
   <div>
@@ -7,7 +7,7 @@ const AddNew = () => (
     <form className="form">
       <input
         type="text"
-        className="title"
+        className="input-title"
         name="booktitle"
         placeholder="Title"
       />
@@ -24,9 +24,8 @@ const AddNew = () => (
         placeholder="Category"
       />
       <button type="submit" className="btn-add">
-        {' '}
-        Add book
-        {' '}
+        {" "}
+        Add book{" "}
       </button>
     </form>
   </div>
