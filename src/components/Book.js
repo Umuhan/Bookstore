@@ -1,7 +1,9 @@
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 
 const Book = (props) => {
-  const { id, title, author, category } = props;
+  const {
+    id, title, author, category,
+  } = props;
   return (
     <div className="book" key={id}>
       <h3 className="category">{category}</h3>

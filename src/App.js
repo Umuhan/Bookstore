@@ -1,9 +1,9 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Categories from "./components/Categories";
-import Navbar from "./components/Navbar";
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Categories from './components/Categories';
+import Navbar from './components/Navbar';
 
-import AddNew from "./components/AddNew";
+import AddNew from './components/AddNew';
 
 const App = () => (
   <Router>
