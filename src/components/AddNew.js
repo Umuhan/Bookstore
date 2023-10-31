@@ -2,7 +2,7 @@ import React from 'react';
 
 const AddNew = () => (
   <div>
-    <h2 className="header">Books</h2>
+    <h3 className="header">Books</h3>
 
     <form className="form">
       <input
