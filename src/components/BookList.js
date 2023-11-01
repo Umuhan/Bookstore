@@ -1,6 +1,6 @@
-import React from "react";
-import Book from "./Book";
-import { useSelector } from "react-redux";
+import React from 'react';
+import { useSelector } from 'react-redux';
+import Book from './Book';
 
 const BookList = () => {
   const { books } = useSelector((state) => state);
@@ -9,7 +9,9 @@ const BookList = () => {
     <>
       <div className="book-list">
         {books.map((book) => {
-          const { id, title, author, category } = book;
+          const {
+            id, title, author, category,
+          } = book;
           return (
             <Book
               key={id}

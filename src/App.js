@@ -1,8 +1,8 @@
-import React from "react";
-import { Provider } from "react-redux";
-import store from "./redux/store";
-import BookList from "./components/BookList";
-import NewBooks from "./components/NewBooks";
+import React from 'react';
+import { Provider } from 'react-redux';
+import store from './redux/store';
+import BookList from './components/BookList';
+import NewBooks from './components/NewBooks';
 
 const App = () => (
   <Provider store={store}>

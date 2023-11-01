@@ -1,6 +1,8 @@
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 
-const Book = ({ id, title, author, category }) => (
+const Book = ({
+  id, title, author, category,
+}) => (
   <div className="book" key={id}>
     <h3 className="category1">{category}</h3>
     <h2 className="booktitle">{title}</h2>

@@ -1,23 +1,23 @@
-import React, { useState } from "react";
-import { useDispatch } from "react-redux";
-import { addBook, removeBook } from "../redux/books/booksSlice";
+import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { addBook, removeBook } from '../redux/books/booksSlice';
 
 const BookActions = () => {
   const dispatch = useDispatch();
   const [newBook, setNewBook] = useState({
-    id: "",
-    title: "",
-    author: "",
-    category: "",
+    id: '',
+    title: '',
+    author: '',
+    category: '',
   });
 
   const handleAddBook = () => {
     dispatch(addBook(newBook));
     setNewBook({
-      id: "",
-      title: "",
-      author: "",
-      category: "",
+      id: '',
+      title: '',
+      author: '',
+      category: '',
     });
   };
 
