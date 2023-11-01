@@ -1,12 +1,12 @@
-import React, { useState } from "react";
-import { useDispatch } from "react-redux";
-import { addBook } from "../redux/books/booksSlice";
+import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { addBook } from '../redux/books/booksSlice';
 
 const NewBooks = () => {
   const dispatch = useDispatch();
-  const [title, setTitle] = useState("");
-  const [author, setAuthor] = useState("");
-  const [category, setCategory] = useState("");
+  const [title, setTitle] = useState('');
+  const [author, setAuthor] = useState('');
+  const [category, setCategory] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -17,8 +17,8 @@ const NewBooks = () => {
         category,
       };
       dispatch(addBook(newBook));
-      setTitle("");
-      setAuthor("");
+      setTitle('');
+      setAuthor('');
     }
   };
   return (
