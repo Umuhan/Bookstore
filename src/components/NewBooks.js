@@ -1,63 +1,52 @@
-import React, { useState } from 'react';
-import { useDispatch } from 'react-redux';
-import { addBook, removeBook } from '../redux/books/booksSlice';
+import React, { useState } from "react";
+import { useDispatch } from "react-redux";
+import { addBook } from "../redux/books/booksSlice";
 
 const BookActions = () => {
   const dispatch = useDispatch();
-  const [newBook, setNewBook] = useState({
-    id: '',
-    title: '',
-    author: '',
-    category: '',
-  });
+  const [title, setTitle] = useState("");
+  const [author, setAuthor] = useState("");
+  const [category, setCategory] = useState("");
 
-  const handleAddBook = () => {
-    dispatch(addBook(newBook));
-    setNewBook({
-      id: '',
-      title: '',
-      author: '',
-      category: '',
-    });
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (title && author && category) {
+      const newBook = {
+        title,
+        author,
+        category,
+      };
+      dispatch(addBook(newBook));
+      setTitle("");
+      setAuthor("");
+    }
   };
-
-  const handleRemoveBook = (id) => {
-    dispatch(removeBook(id));
-  };
-
   return (
     <div>
-      <form className="form">
+      <form onSubmit={handleSubmit} className="form">
         <input
           type="text"
           placeholder="Title"
           className="input-title input"
-          value={newBook.title}
-          onChange={(e) => setNewBook({ ...newBook, title: e.target.value })}
+          value={title}
+          onChange={(e) => setTitle(e.target.value)}
         />
         <input
           type="text"
           placeholder="Author"
           className="author input"
-          value={newBook.author}
-          onChange={(e) => setNewBook({ ...newBook, author: e.target.value })}
+          value={author}
+          onChange={(e) => setAuthor(e.target.value)}
         />
         <input
           type="text"
           placeholder="Category"
           className="category input"
-          value={newBook.category}
-          onChange={(e) => setNewBook({ ...newBook, category: e.target.value })}
+          value={category}
+          onChange={(e) => setCategory(e.target.value)}
         />
-        <button type="button" onClick={handleAddBook} className="btn-add btn">
+        <button type="submit" className="btn-add btn">
           Add Book
-        </button>
-        <button
-          type="button"
-          className="btn-remove btn"
-          onClick={() => handleRemoveBook(newBook.item_id)}
-        >
-          Remove Book
         </button>
       </form>
     </div>
