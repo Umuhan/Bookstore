@@ -1,47 +1,23 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import Book from './Book';
-import AddNew from './AddNew';
 
 const BookList = () => {
-  const books = [
-    {
-      id: 1,
-      title: 'book1',
-      author: 'author1',
-      category: 'category1',
-    },
-    {
-      id: 2,
-      title: 'book2',
-      author: 'author2',
-      category: 'category2',
-    },
-    {
-      id: 3,
-      title: 'book3',
-      author: 'author3',
-      category: 'category3',
-    },
-  ];
+  const books = useSelector((state) => state.books.books);
+
   return (
     <>
       <div className="book-list">
-        {books.map((book) => {
-          const {
-            id, title, author, category,
-          } = book;
-          return (
-            <Book
-              key={id}
-              id={id}
-              title={title}
-              author={author}
-              category={category}
-            />
-          );
-        })}
+        {books.map((book) => (
+          <Book
+            key={book.itemId}
+            itemId={book.itemId}
+            title={book.title}
+            author={book.author}
+            category={book.category}
+          />
+        ))}
       </div>
-      <AddNew />
     </>
   );
 };

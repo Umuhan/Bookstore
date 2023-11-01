@@ -40,10 +40,11 @@ code {
 }
 
 .form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
+  margin: 20px;
+}
+
+.input {
+  margin-inline: 10px;
 }
 
 .input-title {
@@ -56,6 +57,14 @@ code {
   font-size: 20px;
   border-radius: 5px;
   border: 1px solid #ccc;
+}
+
+.btn {
+  font-size: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-inline: 10px;
+  padding: 8px 16px;
 }
 
 .category {
@@ -74,8 +83,25 @@ code {
 
 .category1 {
   border: none;
+  font-weight: normal;
 }
 
 .author1 {
   border: none;
+  font-weight: normal;
+}
+
+.booktitle {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.button-remove {
+  border: none;
+  background-color: rgb(213, 205, 205);
+  color: #fff;
+  font-size: 16px;
+  border-radius: 8px;
+  padding: 8px 16px;
+  cursor: pointer;
 }
