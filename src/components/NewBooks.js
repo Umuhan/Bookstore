@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addBook } from "../redux/books/booksSlice";
 
-const BookActions = () => {
+const NewBooks = () => {
   const dispatch = useDispatch();
   const [title, setTitle] = useState("");
   const [author, setAuthor] = useState("");
@@ -53,4 +53,4 @@ const BookActions = () => {
   );
 };
 
-export default BookActions;
+export default NewBooks;
