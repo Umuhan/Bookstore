@@ -1,29 +1,39 @@
-import React, { useState } from 'react';
-import { useDispatch } from 'react-redux';
-import { addBook } from '../redux/books/booksSlice';
+import React, { useState } from "react";
+import { useDispatch } from "react-redux";
+import { v4 as uuidv4 } from "uuid";
+import { addBook } from "../redux/books/booksSlice";
 
 const NewBooks = () => {
   const dispatch = useDispatch();
-  const [title, setTitle] = useState('');
-  const [author, setAuthor] = useState('');
-  const [category, setCategory] = useState('');
+  const [title, setTitle] = useState("");
+  const [author, setAuthor] = useState("");
+  const [category, setCategory] = useState("");
+  const [text, setText] = useState("");
+
+  const data = {
+    item_id: uuidv4(),
+    title,
+    author,
+    category,
+  };
 
   const handleSubmit = (e) => {
+    console.log("clicked");
     e.preventDefault();
     if (title && author && category) {
-      const newBook = {
-        title,
-        author,
-        category,
-      };
-      dispatch(addBook(newBook));
-      setTitle('');
-      setAuthor('');
+      dispatch(addBook(data));
+      setTitle("");
+      setAuthor("");
+      setCategory("");
+    } else {
+      setText("fill all the required fields");
     }
   };
+
   return (
     <div>
-      <form onSubmit={handleSubmit} className="form">
+      {" "}
+      <form className="form">
         <input
           type="text"
           placeholder="Title"
@@ -45,7 +55,7 @@ const NewBooks = () => {
           value={category}
           onChange={(e) => setCategory(e.target.value)}
         />
-        <button type="submit" className="btn-add btn">
+        <button type="submit" className="btn-add btn" onClick={handleSubmit}>
           Add Book
         </button>
       </form>
