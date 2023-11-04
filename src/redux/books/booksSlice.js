@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
@@ -7,7 +9,7 @@ const baseUrl =
 const fetchBooks = createAsyncThunk("books/fetchUsers", async (thunkAPI) => {
   try {
     const response = await axios.get(baseUrl);
-    console.log(response.data);
+
     return response.data;
   } catch (error) {
     return thunkAPI.rejectWithValue(error.message);

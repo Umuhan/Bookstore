@@ -1,8 +1,8 @@
-import React, { useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import AddNew from "./NewBooks";
-import Book from "./Book";
-import { fetchBooks } from "../redux/books/booksSlice";
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import AddNew from './NewBooks';
+import Book from './Book';
+import { fetchBooks } from '../redux/books/booksSlice';
 
 const BookList = () => {
   const { books } = useSelector((state) => state.books);

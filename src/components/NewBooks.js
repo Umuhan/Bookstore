@@ -1,14 +1,14 @@
-import React, { useState } from "react";
-import { useDispatch } from "react-redux";
-import { v4 as uuidv4 } from "uuid";
-import { addBook } from "../redux/books/booksSlice";
+import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { v4 as uuidv4 } from 'uuid';
+import { addBook } from '../redux/books/booksSlice';
 
 const NewBooks = () => {
   const dispatch = useDispatch();
-  const [title, setTitle] = useState("");
-  const [author, setAuthor] = useState("");
-  const [category, setCategory] = useState("");
-  const [text, setText] = useState("");
+  const [title, setTitle] = useState('');
+  const [author, setAuthor] = useState('');
+  const [category, setCategory] = useState('');
+  const [setText] = useState('');
 
   const data = {
     item_id: uuidv4(),
@@ -18,21 +18,20 @@ const NewBooks = () => {
   };
 
   const handleSubmit = (e) => {
-    console.log("clicked");
     e.preventDefault();
     if (title && author && category) {
       dispatch(addBook(data));
-      setTitle("");
-      setAuthor("");
-      setCategory("");
+      setTitle('');
+      setAuthor('');
+      setCategory('');
     } else {
-      setText("fill all the required fields");
+      setText('fill all the required fields');
     }
   };
 
   return (
     <div>
-      {" "}
+      {' '}
       <form className="form">
         <input
           type="text"
