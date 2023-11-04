@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
+import { v4 as uuidv4 } from 'uuid';
 import { addBook } from '../redux/books/booksSlice';
 
 const NewBooks = () => {
@@ -7,23 +8,31 @@ const NewBooks = () => {
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
   const [category, setCategory] = useState('');
+  const [setText] = useState('');
+
+  const data = {
+    item_id: uuidv4(),
+    title,
+    author,
+    category,
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (title && author && category) {
-      const newBook = {
-        title,
-        author,
-        category,
-      };
-      dispatch(addBook(newBook));
+      dispatch(addBook(data));
       setTitle('');
       setAuthor('');
+      setCategory('');
+    } else {
+      setText('fill all the required fields');
     }
   };
+
   return (
     <div>
-      <form onSubmit={handleSubmit} className="form">
+      {' '}
+      <form className="form">
         <input
           type="text"
           placeholder="Title"
@@ -45,7 +54,7 @@ const NewBooks = () => {
           value={category}
           onChange={(e) => setCategory(e.target.value)}
         />
-        <button type="submit" className="btn-add btn">
+        <button type="submit" className="btn-add btn" onClick={handleSubmit}>
           Add Book
         </button>
       </form>

@@ -31,14 +31,6 @@ code {
   font-size: 30px;
 }
 
-.list {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 3rem;
-}
-
 .form {
   margin: 20px;
 }
@@ -47,16 +39,10 @@ code {
   margin-inline: 10px;
 }
 
-.input-title {
+.input-title,
+.author,
+.category {
   font-size: 20px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
-.author {
-  font-size: 20px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
 }
 
 .btn {
@@ -67,41 +53,27 @@ code {
   padding: 8px 16px;
 }
 
-.category {
-  font-size: 20px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
+.book-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
 .book-list {
   display: flex;
-  justify-content: start;
   align-items: center;
-  gap: 10rem;
-  margin-left: 3rem;
+  gap: 2rem;
 }
 
-.category1 {
-  border: none;
-  font-weight: normal;
-}
-
-.author1 {
-  border: none;
-  font-weight: normal;
-}
-
-.booktitle {
+.book {
+  margin-left: 30px;
   font-size: 18px;
   font-weight: normal;
 }
 
-.button-remove {
-  border: none;
-  background-color: rgb(213, 205, 205);
-  color: #fff;
-  font-size: 16px;
-  border-radius: 8px;
-  padding: 8px 16px;
-  cursor: pointer;
+.book-app {
+  font-size: 3rem;
+  font-weight: bold;
 }
