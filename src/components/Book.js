@@ -1,30 +1,33 @@
-import PropTypes from 'prop-types';
-import { useDispatch } from 'react-redux';
-import { removeBook } from '../redux/books/booksSlice';
+import PropTypes from "prop-types";
+import { useDispatch } from "react-redux";
+import { removeBook } from "../redux/books/booksSlice";
 
-const Book = ({
-  itemId, title, author, category,
-}) => {
+const Book = ({ item_id, title, author, category }) => {
   const dispatch = useDispatch();
 
   return (
-    <div className="book" key={itemId}>
-      <h3 className="category1">{category}</h3>
-      <h2 className="booktitle">{title}</h2>
-      <h3 className="author1">{author}</h3>
-      <button
-        type="button"
-        className="button-remove"
-        onClick={() => dispatch(removeBook(itemId))}
-      >
-        Remove
-      </button>
+    <div className="books-container">
+      <div className="book-list" key={item_id}>
+        <h2 className="booktitle book">{title}</h2>
+        <h3 className="author book">{author}</h3>
+        <h3 className="category book">{category}</h3>
+
+        <div className="btn-container">
+          <button
+            type="button"
+            className="btn"
+            onClick={() => dispatch(removeBook({ item_id }))}
+          >
+            Remove
+          </button>
+        </div>
+      </div>
     </div>
   );
 };
 
 Book.propTypes = {
-  itemId: PropTypes.string.isRequired,
+  item_id: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
   category: PropTypes.string.isRequired,
