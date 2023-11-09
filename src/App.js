@@ -1,14 +1,22 @@
-import React from 'react';
-import { Provider } from 'react-redux';
-import store from './redux/store';
-import BookList from './components/BookList';
+import React from "react";
+import { Provider } from "react-redux";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import store from "./redux/store";
+import BookList from "./components/BookList";
+import Navbar from "./components/Navbar";
+import Categories from "./components/Categories";
 
 const App = () => (
   <Provider store={store}>
-    <div className="App">
-      <h1 className="book book-app">Books</h1>
-      <BookList />
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<BookList />} />
+          <Route path="/categories" element={<Categories />} />
+        </Routes>
+      </div>
+    </Router>
   </Provider>
 );
 
