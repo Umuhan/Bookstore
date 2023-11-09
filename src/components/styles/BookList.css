@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto+Slab:wght@300;400;500&display=swap");
+
+.container {
+  width: 100%;
+  padding: 0 6rem 0 6rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.book-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 0.5rem;
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+.book {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.books-container {
+  width: 100%;
+  margin: 20px 0 10px;
+  padding: 16px;
+  padding-right: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  background-color: #fff;
+  border-radius: 0.5rem;
+}
+
+.category {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  color: rgb(181, 171, 171);
+}
+
+.title {
+  font-family: "Roboto Slab", serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #121212;
+}
+
+.author {
+  font-family: "Roboto Slab", serif;
+  font-size: 12px;
+  font-weight: 300;
+  color: #4386bf;
+}
+
+.line {
+  margin: 0 8px 0 16px;
+}
+
+.btn-container {
+  display: flex;
+  margin: 16px 34px 0 0;
+  align-items: center;
+}
+
+.btn {
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  color: #4386bf;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: rgba(4, 125, 247, 0.915);
+}

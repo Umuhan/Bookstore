@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import './styles/BookList.css';
 import AddNew from './NewBooks';
 import Book from './Book';
 import { fetchBooks } from '../redux/books/booksSlice';
@@ -13,8 +14,8 @@ const BookList = () => {
   }, [dispatch]);
 
   return (
-    <div className="main">
-      <div className="">
+    <div className="container">
+      <div className="book-list">
         {books.map((book) => (
           <Book
             key={book.item_id}
