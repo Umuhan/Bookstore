@@ -1,18 +1,30 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { FaUser } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import "../App.css";
 
 const Navbar = () => (
-  <nav>
-    <h2 className="header">Bookstore</h2>
-    <ul className="list">
-      <li className="list-item">
-        <Link to="/">Books</Link>
-      </li>
-      <li className="list-item">
-        <Link to="/categories">Categories</Link>
-      </li>
-    </ul>
-  </nav>
+  <main>
+    <nav className="nav">
+      <h2 className="header">Bookstore CMS</h2>
+      <ul className="list">
+        <li className="link">
+          <Link to="/" className="nav-link item">
+            Books
+          </Link>
+        </li>
+        <li className="link">
+          <Link to="/categories" className="nav-link item">
+            Categories
+          </Link>
+        </li>
+      </ul>
+
+      <div className="nav-item">
+        <FaUser className="icon" />
+      </div>
+    </nav>
+  </main>
 );
 
 export default Navbar;
