@@ -1,0 +1,41 @@
+import { useState, useEffect } from 'react';
+import { CircularProgressbar } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
+import './styles/zeplin.css';
+
+const Zeplin = () => {
+  const [random, setRandom] = useState();
+  const getNumber = () => Math.floor(Math.random() * 100);
+
+  useEffect(() => {
+    setRandom(getNumber);
+  }, []);
+
+  return (
+    <div className="zeplin">
+      <div className="oval1">
+        {/* <div className="Oval-2" /> */}
+        <div className="Oval-2">
+          <CircularProgressbar value={random} styles={{ width: '50px' }} />
+        </div>
+        <div className="comlt">
+          <span className="-Percent-Complete">
+            {random}
+            %
+          </span>
+          <span className="Completed ">Completed</span>
+        </div>
+      </div>
+      <div className="Line-2" />
+      <div className="ovel2">
+        <span className="Current-Chapter upper">Current Chapter</span>
+        <span className="Current-Lesson ">Chapter 17</span>
+        <div className="Rectangle-2">
+          <span className="Update-progress upper">Update progress</span>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Zeplin;
