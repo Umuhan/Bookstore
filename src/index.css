@@ -6,13 +6,10 @@
 
 body {
   background-color: rgb(247, 247, 247);
+  margin-bottom: 150px;
 }
 
 .input {
   font-size: 15px;
   border-radius: 10px;
-}
-
-.book {
-  font-size: 20px;
 }
