@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 
 .app {
-  box-shadow: 0 4px 8px 0 rgba(248, 246, 246, 0.877),
+  box-shadow:
+    0 4px 8px 0 rgba(248, 246, 246, 0.877),
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
   /* padding: 10px; */
   width: 90%;
   margin: 0 auto;
