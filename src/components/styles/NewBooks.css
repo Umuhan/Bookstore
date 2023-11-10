@@ -1,10 +1,14 @@
+.div {
+  padding-bottom: 10px;
+}
+
 .form {
   margin-top: 10px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .bookauthor,
