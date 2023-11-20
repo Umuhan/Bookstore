@@ -10,8 +10,8 @@
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
   - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
   - [Install](#install)
   - [Usage](#usage)
   - [Run tests](#run-tests)
@@ -25,82 +25,124 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Bookstore] <a name="about-project"></a>
+# 📖 BookStore <a name="about-project"></a>
 
-An online bookstore that uses React and Router likely refers to a web application or website for buying and browsing books online. React is a popular JavaScript library for building user interfaces, and "Router" likely refers to a routing library like React Router, used for managing navigation within the application. This combination allows for dynamic and interactive user experiences when searching for and purchasing books on the website.
+**BookStore** An online bookstore that uses React and Router likely refers to a web application or website for buying and browsing books online. React is a popular JavaScript library for building user interfaces, and "Router" likely refers to a routing library like React Router, used for managing navigation within the application. This combination allows for dynamic and interactive user experiences when searching for and purchasing books on the website.
+
+> By building this application, I will learn how to use React and Redux.
 
 ## 🛠 Built With <a name="built-with"></a>
 
+- React Router
+- React components
+- JavaScript
+- CSS
+- ReactJS
+- Redux
+- Eslint
+- Stylelint
+
 ### Tech Stack <a name="tech-stack"></a>
 
-HTML5
-CSS3
-React
+<details>
+  <ul>
+    <li><a href="https://reactjs.org/">React.js</a></li>
+  </ul>
+</details>
+
+<details>
+  <ul>
+    <li><a href="https://javaScript.com/">javaScript.js</a></li>
+  </ul>
+</details>
+
+<details>
+  <ul>
+    <li><a href="https://www.html.com/">HTML</a></li>
+  </ul>
+</details>
+<details>
+  <ul>
+    <li><a href="https://www.CSS.com/">CSS</a></li>
+  </ul>
+</details>
 
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-- **Navigation bar**
-- **Make list of books**
-- **Add and remove books**
+> Describe between 1-3 key features of the application.
+
+- **[Add Reducer and Actions]**
+- **[Use redux in react components]**
+- **[Connect to API]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- LIVE DEMO -->
 
-<!-- GETTING STARTED -->
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://readers-bookstore.netlify.app)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
 To get a local copy up and running, follow these steps.
 
-**Clone this repo as described in the setup section.**
-
-**Make modifications as peferred**
-
 ### Prerequisites
 
 In order to run this project you need:
 
-Example command:
-
-install desktop, laptop or mac with internet connection
-
-A text editor (i.e. Visual Studio)
-
-GitHub account
+- [Node.js](https://nodejs.org/en/)
+- [React](https://reactjs.org/)
+- [Redux](https://redux.js.org/)
+- [NPM](https://www.npm.com/)
+- [ESLint](https://eslint.org/)
+- [Stylelint](https://stylelint.io/)
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-Example commands:
+```sh
+  cd folder
+  `git clone git@github.com:Umuhan/Bookstore.git`
+```
 
-cd my-folder
-git clone git@github.com:Umuhan/Bookstore.git
+## Install
 
-### Usage
+Install this project with:
+
+```sh
+  cd project
+  npm install
+```
+
+## Usage
 
 To run the project, execute the following command:
 
-Example command:
+```sh
+  npm start
+```
 
-npm start
-
-### Run tests
+## Run tests
 
 To run tests, run the following command:
 
-Example command:
+```sh
+  npm test
+```
 
-npm jest
-
-### Deployment
+## Deployment
 
 You can deploy this project using:
 
-COMING SOON!
+```sh
+- Live Demo: [Live Demo](https://readers-bookstore.netlify.app)
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -108,11 +150,11 @@ COMING SOON!
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 Umuhan Mohamud
+👤 **Umuhan Mohamud**
 
-- GitHub: [ @Umuhan](https://github.com/Umuhan)
-- Twitter: [@twitterhandle](https://twitter.com/HannyUmuhan)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/umuhan-mohamud/)
+- GitHub: [@Umuhan](https://github.com/Umuhan)
+- Twitter: [@Umuhan](https://twitter.com/HannyUmuhan)
+- LinkedIn: [@Umuhan](https://www.linkedin.com/in/umuhan-mohamud/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -120,9 +162,11 @@ COMING SOON!
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **[Using Redux]**
-- **[Well Designed Grafic User Interface]**
-- **[More methods]**
+- [ ] **[Initialize project with components (React only)]**
+- [ ] **[Add reducers and actions.]**
+- [ ] **[Use Redux in React components.]**
+- [ ] **[Connect to API.]**
+- [ ] **[Styling ]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -140,7 +184,7 @@ Feel free to check the [issues page](https://github.com/Umuhan/Bookstore/issues)
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project give me a thumbs up.
+Give a ⭐️ if you like this project
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -148,8 +192,7 @@ If you like this project give me a thumbs up.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank microverse and
-Mahamed Hassan Noor
+I would like to thank Microverse
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -157,4 +200,9 @@ Mahamed Hassan Noor
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](./LICENSE.txt) licensed.
+
+_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+```
