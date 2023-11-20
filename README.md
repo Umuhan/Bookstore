@@ -140,7 +140,7 @@ To run tests, run the following command:
 
 You can deploy this project using:
 
-[@Live Demo](https://readers-bookstore.netlify.app)
+[Live Demo](https://readers-bookstore.netlify.app)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
