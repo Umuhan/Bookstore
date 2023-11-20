@@ -1,12 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto+Slab:wght@300;400;500&display=swap");
 
-.container {
-  width: 100%;
-  padding: 0 6rem 0 6rem;
-  display: flex;
-  flex-direction: column;
-}
-
 .book-list {
   display: flex;
   flex-direction: column;
